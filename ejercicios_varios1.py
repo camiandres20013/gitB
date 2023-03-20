@@ -48,3 +48,25 @@ print(2>=3)
 print(2<=3)
 print(2==3)
 print(2!=3) #diferentes
+
+estatura=float(input("Ingrese la estatura en metros: "))
+print(estatura)
+peso=float(input("Ingrese el peso en kilogramos: "))
+print(peso)
+imc=peso/(estatura**2)
+print("el indice de masa corporal es: ",round(imc,1))
+
+# Problema salrio 
+#   Se ingresan los datos
+Salario,CanHorasEx,Bon=input().split()
+Salario = float(Salario)
+CanHorasEx = int(CanHorasEx)
+Bon=int(Bon)
+
+#   Operaciones
+ValHora = Salario/(192) #Valor de la hora normal
+ValHoraEx = ValHora*(1.25) #Valor de la hora extra 
+Bonificaciones = (Salario)*(1.05) #Bonificacion
+SalarioTotal = Salario + (ValHoraEx*CanHorasEx) + (Bonificaciones*Bon)
+Total = SalarioTotal-((SalarioTotal*0.035)+(SalarioTotal*0.04)+(SalarioTotal*0.01))
+print(round(Total,1))
