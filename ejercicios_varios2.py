@@ -91,3 +91,11 @@ for i in range(1,101):
      cont+=1
   if cont ==2:
     print(i)
+#ciclo while
+numMax=int(input("ingrese el numero de impresiones:"))
+x=0
+while x<=numMax:
+  print(x)
+  x+=1
+
+  
